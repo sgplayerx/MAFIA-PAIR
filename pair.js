@@ -56,27 +56,27 @@ router.get('/', async (req, res) => {
                     const credsPath = path.join(tempDir, 'creds.json');
                     const sessionData = fs.readFileSync(credsPath, 'utf8');
                     const base64 = Buffer.from(sessionData).toString('base64');
-                    const sessionId = "Hissari-Boy-MD~" + base64;
+                    const sessionId = "MAFIA-MD~" + base64;
 
                     await sock.sendMessage(sock.user.id, { text: sessionId });
 
                     const successMsg = {
                         text:
-                           `🚀 *SG-PLAYER-MD- Session Created!*\n\n` +
+                           `🚀 *MAFIA-MD- Session Created!*\n\n` +
                             `▸ *Never share* your session ID\n` +
                             `▸ Join our WhatsApp Channel\n` +
                             `▸ Report bugs on GitHub\n\n` +
                             `_Powered by SGPLAYER-MD\n\n` +
                             `🔗 *Useful Links:*\n` +
-                            `▸ https://https://github.com/sgplayerx/SG-PALYER-MD\n` +
-                            `▸ https://whatsapp.com/channel/0029VbAg8dwElagmJ548Ul0G`,
+                            
+                            `▸ https://whatsapp.com/channel/0029Vb6f33lIyPtcEr6X6c0H`,
                         contextInfo: {
                             mentionedJid: [sock.user.id],
                             forwardingScore: 1000,
-                            isForwarded: true,
+                            isForwarded: false,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: "120363403831162407@newsletter",
-                                newsletterName: "SG-PLAYER-MD",
+                                newsletterJid: "https://whatsapp.com/channel/0029Vb6f33lIyPtcEr6X6c0H",
+                                newsletterName: "MAFIA-MD",
                                 serverMessageId: 143
                             }
                         }
